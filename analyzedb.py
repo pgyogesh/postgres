@@ -23,7 +23,7 @@ else:
     logging.error("database not supplied... exiting...")
     sys.exit()
 
-con = DB(dbname='postgres', host=options.host)
+con = DB(dbname='template1', host=options.host)
 if vDatabase in con.get_databases():
     pass
 else:
